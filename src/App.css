@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.light {
+    --body-bg: #f6f8ff;
+    --app-bg: #fefefe;
+    --text-color-one: #4b6a9b;
+    --text-color-two: #222731;
+    --text-color-three: #697c9a;
+    --theme-toggle-hover-color: #222731;
+    --box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+.dark {
+    --body-bg: #141d2f;
+    --app-bg: #1e2a47;
+    --text-color-one: #fff;
+    --text-color-two: #fff;
+    --text-color-three: #fff;
+    --theme-toggle-hover-color: #90a4d4;
+    --box-shadow: none;
+}
+
+.App {
+    min-height: 100vh;
+    font-family: "Space Mono", monospace;
+    background-color: var(--body-bg);
+
+
+}
+
+.container {
+    flex: 1;
+    max-width: 480px;
+}
+
+@media(min-width: 768px) {
+    .App {
+        padding: 31px 98px;
+    }
+
+    .container {
+        max-width: 650px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .container {
+        max-width: 730px;
+    }
+}
+.toggleBtn{
+    align-items: center;
+    background-color: initial;
+    color: var(--text-color-one);
+    cursor: pointer;
+    display: flex;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    gap: 16px;
+}
